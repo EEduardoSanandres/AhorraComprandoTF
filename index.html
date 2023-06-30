@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/CSS/styles.css"> <!-- Agrega esta línea -->
+  <title>AHORRA Comprando</title>
+</head>
+<body>
+
+<!-- Header -->
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light container fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="src/img/icon.png" alt="Icono" width="40" height="40" class="mr-2">
+      <span style="color: #000;">AHORRA</span> <span style="color: #0073B1;">Comprando</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home" onclick="event.preventDefault(); loadContent('home')">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#product" onclick="event.preventDefault(); loadContent('product')">Producto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#register" onclick="event.preventDefault(); loadContent('register')">Registrate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" onclick="event.preventDefault(); loadContent('about')">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" onclick="event.preventDefault(); loadContent('contact')">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+  <!-- Contenido -->
+  <div id="content" class="container" style="margin-top: 120px;">
+    <div id="home">
+      <div class="container-fluid bg-image">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-md-6 text-center">
+            <div style="background-color: rgba(201, 231, 252, 0.9); padding: 20px; margin-bottom: 20px;">
+              <h1>
+                <span style="color: #333333;">AHORRA</span>
+                <span style="color: #0073B1;">Comprando</span>
+              </h1>
+              <p>
+                <span style="color: #333333;">"Descubre, Compara y Ahorra: Encuentra los mejores precios cerca de ti"</span>
+              </p>
+            </div>
+            <button class="btn btn-primary">REGISTRATE GRATIS</button>
+            <button class="btn btn-secondary">INICIAR SESIÓN</button>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div id="product" style="display: none;">
+      <div class="product">
+        <h1>¿Cómo funciona el sistema de puntos por compras?</h1>
+        <h4>Cada vez que compras a través de AHORRAComprando, te regalaremos puntos que podrás canjear en el futuro por productos o envíos GRATIS.</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">COMPRA</h5>
+                <p class="card-text">Regístrate o inicia sesión en AHORRAComprando y compra en más de 700 tiendas a nivel nacional.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">GANA PUNTOS</h5>
+                <p class="card-text">Cada vez que compres en la aplicación, te regalaremos puntos. Si eres cliente premium, recibirás aún más puntos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">AHORRA Y GANA</h5>
+                <p class="card-text">Cuando tengas los puntos acumulados, podrás canjearlos por productos o envíos GRATIS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div id="register" style="display: none;">
+      <div class="container">
+        <div class="text-center mt-5">
+          <h1 class="text-uppercase">Regístrate</h1>
+          <h4 class="text-uppercase">Precios accesibles para todos</h4>
+        </div>
+      
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-subtitle custom-card-subtitle">Suscríbete</h5>
+                <h1 class="card-title custom-card-title">GRATIS</h1>
+                <div class="card-section custom-card-section">
+                  <h5>Funciones:</h5>
+                  <ul>
+                    <li>Comparar precios en tiendas cercanas</li>
+                    <li>Acumulación de puntos por compras</li>
+                    <li>Descuentos y ofertas diarias</li>
+                    <li>Acceso a Delivery</li>
+                  </ul>
+                </div>
+                <button class="btn btn-primary btn-block">SUSCRÍBETE</button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-subtitle custom-card-subtitle">Suscríbete</h5>
+                <h2 class="card-title custom-card-title">PREMIUM</h2>
+                <h1 class="card-title custom-card-title">$9.99</h1>
+                <p class="card-text custom-card-title">US$ por mes</p>
+                <div class="card-section custom-card-section">
+                  <h5>Funciones adicionales:</h5>
+                  <ul>
+                    <li>Descuentos especiales en ciertos productos</li>
+                    <li>Acceso a envios gratis en algunas compras</li>
+                    <li>Ofertas exclusivas</li>
+                    <li>Posibilidad de acumular más puntos</li>
+                  </ul>
+                </div>
+                <button class="btn btn-primary btn-block">SUSCRÍBETE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    </div>
+    <div id="about" style="display: none;">
+      <div class="container">
+        <div class="text-center mt-5">
+          <h1><span style="color: #000;">Sobre AHORRA</span> <span style="color: #0073B1;">Comprando</span></h1>
+          <img src="src/img/about.jpg" alt="Imagen sobre AHORRA Comprando" class="img-fluid about-image">
+        </div>
+      
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">NUESTRA MISIÓN</h5>
+                <p class="card-text">Nuestra misión es proporcionar a nuestros clientes una herramienta efectiva y fácil de usar para encontrar los mejores precios en diferentes tiendas en su localidad. Con la finalidad de que nuestros clientes ahorren tiempo y dinero en sus compras diarias.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">¿QUIÉNES SOMOS?</h5>
+                <p class="card-text">Somos un grupo de estudiantes de la UPC que busca crear una aplicación en la cual puedas comparar precios de productos en una zona específica donde te encuentres.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    </div>
+    <div id="contact" style="display: none;">
+      <h1>Contáctanos</h1> 
+      <div class="container mt-5">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" class="form-control" id="apellidos" placeholder="Ingrese sus apellidos">
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo Electrónico:</label>
+              <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
+            </div>
+            <div class="form-group">
+              <label for="direccion">Dirección:</label>
+              <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+            </div>
+            <div class="text-center"> <!-- Contenedor centrado -->
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-4 py-3">
+    <div class="container text-center">
+      <span class="text">© 2023 AHORRA Comprando. Todos los derechos reservados.</span>
+      <div class="mt-3">
+        <a href="#">Términos y condiciones</a>
+        <span class="text-muted">|</span>
+        <a href="#">Política de Privacidad</a>
+        <span class="text-muted">|</span>
+        <a href="#">Política de Cookies</a>
+      </div>
+    </div>
+  </footer>  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="src/JavaScript/app.js"></script>
+  <script>
+    function loadContent(page) {
+      // Ocultar todas las secciones
+      var sections = document.getElementById('content').children;
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+      }
+      // Mostrar la sección solicitada
+      document.getElementById(page).style.display = 'block';
+    }
+  
+    // Cargar el contenido de la página de inicio al cargar la aplicación
+    window.addEventListener('load', function() {
+      loadContent('home');
+    });
+  </script>
+</body>
+</html>
